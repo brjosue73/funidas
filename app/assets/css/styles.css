@@ -1,0 +1,288 @@
+/*
+ *    RESET
+ */
+* {
+  font-family: sans-serif;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.modal.in .modal-dialog {
+  z-index: inherit;
+  width: 850px;
+}
+
+.modal-body p {
+  padding: 0 2rem;
+  width: 800x;
+  max-width: 800x;
+}
+
+.btn {
+  background-color: #3498db;
+  padding: .6rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent lightgray transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent lightgray;
+}
+
+/*
+ *    FONTS
+ */
+@font-face {
+  font-family: architect;
+  src: url("../fonts/ArchitectsDaughter.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir.ttf");
+}
+
+/*
+ *    TEXTO
+ */
+p {
+  text-align: justify;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/*
+ *    MENU
+ */
+#myMenu {
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  padding: .8em;
+  margin: 0;
+  z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.myMenu__link {
+  background-color: rgba(200, 200, 200, 0.6);
+  padding: .5rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  max-width: calc(100% / 7);
+  text-align: center;
+}
+
+.myMenu__link.active {
+  background-color: rgba(18, 172, 163, 0.5) !important;
+}
+
+/*
+ *    SLIDES SETTINGS
+ */
+.fp-tableCell, .content {
+  display: flex !important;
+}
+
+.content {
+  justify-content: space-between;
+}
+
+.portada > .fp-tableCell {
+  justify-content: center;
+  align-items: center;
+}
+
+.fp-tableCell, .portada > .fp-tableCell {
+  flex-direction: column;
+}
+
+.portada > .fp-tableCell {
+  width: 100%;
+  height: 100% !important;
+}
+
+.text-center, h1, h2 {
+  text-align: center;
+}
+
+.section {
+  background-image: url("../img/pasto.png");
+  background-repeat: repeat-x;
+  background-position-y: calc(100vh - 150px);
+}
+
+.section_title {
+  margin-top: 6rem;
+  margin-bottom: 0;
+  color: #12aca3;
+  font-family: architect;
+  font-size: 2.7em;
+}
+
+.section_subtitle {
+  margin-top: .7em;
+  font-family: avenir;
+  font-size: 2em;
+}
+
+.fp-tableCell {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.content p {
+  font-size: 1.2em;
+  width: 76%;
+}
+
+.content span, .content .der {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #12aca3;
+  float: right;
+}
+
+.content .der {
+  float: none;
+}
+
+.content img {
+  width: 20%;
+  height: 325px;
+}
+
+.slide-cover {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+.slide-cover .slide-cover_p {
+  width: 59%;
+  padding-top: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.slide-cover .slide-cover_p li {
+  list-style-type: disc;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.slide-cover .slide-cover_p li a:hover {
+  text-decoration: underline;
+}
+
+.slide-cover .slide-cover_img {
+  width: 40%;
+}
+
+.content_p--alone {
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.glosario h2.subtitulo {
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 1.6em;
+}
+
+.glosario hr {
+  margin-top: 0;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+/*
+ *    PORTADA
+ */
+.portada > .fp-tableCell img {
+  width: 50%;
+  height: 50%;
+}
+
+.portada {
+  background-image: url("../img/fondo1.png");
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.portada a {
+  margin-top: 6rem;
+  text-align: center;
+  color: #fff;
+  background-color: #a83d2b;
+  width: 200px;
+  padding: 1rem;
+  font-size: 1.2em;
+  border-width: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.portada .fp-tableCell {
+  max-width: 100%;
+}
+
+/*
+ *    PRESENTACION
+ */
+.presentacion {
+  background-image: url("../img/wall.jpg");
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.presentacion .fp-tableCell {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.sponsors {
+  position: relative;
+  top: calc(100vh - 184px);
+  left: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.opciones {
+  padding-top: 10px;
+  padding-right: 10px;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  justify-content: flex-end;
+  font-size: 1em;
+}

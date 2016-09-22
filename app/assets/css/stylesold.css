@@ -1,0 +1,261 @@
+/*
+ *    RESET
+ */
+* {
+  font-family: sans-serif;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.modal.in .modal-dialog {
+  z-index: inherit;
+  width: 720px;
+}
+
+.modal-body p {
+  padding: 0 2rem;
+  width: 635px;
+  max-width: 635px;
+}
+
+.btn {
+  background-color: #3498db;
+  padding: .6rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/*
+ *    FONTS
+ */
+@font-face {
+  font-family: architect;
+  src: url("../fonts/ArchitectsDaughter.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir.ttf");
+}
+
+/*
+ *    TEXTO
+ */
+p {
+  text-align: justify;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/*
+ *    MENU
+ */
+#myMenu {
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.myMenu__link {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: .5rem;
+  color: #12aca3;
+  font-weight: 600;
+  border-radius: 5px;
+  max-width: calc(100% / 7);
+  text-align: center;
+}
+
+.myMenu__link.active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+ *    SLIDES SETTINGS
+ */
+.fp-tableCell, .content {
+  display: flex !important;
+}
+
+.content {
+  justify-content: space-between;
+}
+
+.portada > .fp-tableCell {
+  justify-content: center;
+  align-items: center;
+}
+
+.fp-tableCell, .portada > .fp-tableCell {
+  flex-direction: column;
+}
+
+.portada > .fp-tableCell {
+  width: 100%;
+  height: 100% !important;
+}
+
+.text-center, h1, h2 {
+  text-align: center;
+}
+
+.section {
+  background-image: url("../img/pasto.png");
+  background-repeat: repeat-x;
+  background-position-y: calc(100vh - 150px);
+}
+
+.section_title {
+  margin-top: 6rem;
+  margin-bottom: 0;
+  color: #12aca3;
+  font-family: architect;
+  font-size: 2.7em;
+}
+
+.section_subtitle {
+  margin-top: .7em;
+  font-family: avenir;
+  font-size: 2em;
+}
+
+.fp-tableCell {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.content p {
+  font-size: 1.3em;
+  width: 76%;
+}
+
+.content span {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #12aca3;
+  float: right;
+}
+
+.content img {
+  width: 20%;
+  height: 325px;
+}
+
+.slide-cover {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+.slide-cover .slide-cover_p {
+  width: 59%;
+  padding-top: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.slide-cover .slide-cover_p li {
+  list-style-type: disc;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.slide-cover .slide-cover_p li:hover {
+  text-decoration: underline;
+}
+
+.slide-cover .slide-cover_img {
+  width: 40%;
+}
+
+.content_p--alone {
+  margin: 0 auto;
+}
+
+/*.fp-slidesNav span, .fp-slidesNav a {
+    left: 2px !important;
+    top: 2px !important;
+}
+.fp-slidesNav span, .fp-slidesNav a, .fp-slidesNav li {
+    height: 15px !important;
+    width: 15px !important;
+}*/
+/*.fp-slidesNav ul li:hover a span {
+    margin: 0;
+}*/
+/*.fp-slidesNav span {
+    top: 0/ !important;
+    left: 0 !important;
+}
+.fp-slidesNav span, .fp-slidesNav li  {
+    height: 15px !important;
+    width: 15px !important;
+}
+
+.fp-slidesNav a.active span {
+    height: 30px !important;
+    width: 30px !important;
+}*/
+/*
+ *    PORTADA
+ */
+.portada > .fp-tableCell img {
+  width: 50%;
+  height: 50%;
+}
+
+.portada {
+  background-image: url("../img/fondo1.png");
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.portada a {
+  margin-top: 6rem;
+  text-align: center;
+  color: #fff;
+  background-color: #a83d2b;
+  width: 200px;
+  padding: 1rem;
+  font-size: 1.2em;
+  border-width: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.portada .fp-tableCell {
+  max-width: 100%;
+}
+
+/*
+ *    PRESENTACION
+ */
+.presentacion {
+  background-image: url("../img/pies.jpg");
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

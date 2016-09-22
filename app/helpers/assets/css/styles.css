@@ -1,0 +1,30 @@
+* {
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+#myMenu {
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#myMenu [data-menuanchor] a {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+}
